@@ -1,19 +1,75 @@
 extends layout
 
 block title
-  title Template
+  title Pattern Library
 
 block content
 
   h1 Pattern Library
+  nav
+    ul
+      li
+        a(href="#grid") Grid
+      li
+        a(href="#colors") Colors
+      li
+        a(href="#controls") Controls
+      li
+        a(href="#content") Content
+      li
+        a(href="#notifications") Notifications
+      li
+        a(href="#forms") Forms
+      li
+        a(href="#navigation") Navigation
+      li
+        a(href="#modals") Modals
 
-  h2 Common
+  //---------------------------------------------------------------------------
+  h2#grid Grid
+  a(href="#grid").fa.fa-anchor
+  //---------------------------------------------------------------------------
 
-  table
+  h3 Breakpoints
+
+  .breakpoints
+    p.fa.fa-eye
+
+  h3 Layout
+  .span-12-of-12
+    p span-12-of-12
+
+    .span-3-of-12
+      p span-3-of-12
+    .span-3-of-12
+      p span-3-of-12
+    .span-3-of-12
+      p span-3-of-12
+    .span-3-of-12
+      p span-3-of-12
+
+  .span-12-of-12
+    p span-12-of-12
+
+    .span-4-of-12
+      p span-4-of-12
+    .span-4-of-12
+      p span-4-of-12
+    .span-4-of-12
+      p span-4-of-12
+
+  //---------------------------------------------------------------------------
+  h2#typography Typography
+  a(href="#typography").fa.fa-anchor
+  //---------------------------------------------------------------------------
+
+  table.table-pattern
     thead
       tr
         th
-          h3 Typography
+          p Element
+        th
+          p Example
     tbody
       tr
         td
@@ -67,23 +123,23 @@ block content
           p
             small this text is small
 
+  //---------------------------------------------------------------------------
+  h2#colors Colors
+  a(href="#colors").fa.fa-anchor
+  //---------------------------------------------------------------------------
+
+  table.table-pattern
       tr
         td
-          h3 Colours
+          h2 Colours
 
-  h2 Grid
 
-  .span-12-of-12
-    p span-12-of-12
-    .span-3-of-12
-    .span-3-of-12
-    .span-3-of-12
+  //---------------------------------------------------------------------------
+  h2#controls Controls
+  a(href="#controls").fa.fa-anchor
+  //---------------------------------------------------------------------------
 
-    
-
-  h2 Controls
-
-  table
+  table.table-pattern
     thead
       tr
         th
@@ -92,7 +148,8 @@ block content
       tr
         td
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -101,9 +158,13 @@ block content
       tr
         td
 
-  h2 Presenting content
+  //---------------------------------------------------------------------------
+  h2#content Presenting content
+  a(href="#content").fa.fa-anchor
+  //---------------------------------------------------------------------------
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -112,7 +173,8 @@ block content
       tr
         td
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -121,7 +183,8 @@ block content
       tr
         td
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -130,7 +193,8 @@ block content
       tr
         td
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -139,7 +203,8 @@ block content
       tr
         td
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -148,7 +213,8 @@ block content
       tr
         td
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -157,9 +223,13 @@ block content
       tr
         td
 
-  h2  Notifications
+  //---------------------------------------------------------------------------
+  h2#notifications  Notifications
+  a(href="#notifications").fa.fa-anchor
+  //---------------------------------------------------------------------------
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -167,7 +237,8 @@ block content
     tbody
       tr
         td
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -175,7 +246,8 @@ block content
     tbody
       tr
         td
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -183,7 +255,8 @@ block content
     tbody
       tr
         td
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -192,9 +265,63 @@ block content
       tr
         td
 
-  h2 Forms
+  //---------------------------------------------------------------------------
+  h2#forms Forms
+  a(href="#forms").fa.fa-anchor
+  //---------------------------------------------------------------------------
 
-  table
+  table.table-pattern
+    thead
+      tr
+        th
+          p Element
+        th
+          p Example
+    tbody
+      tr
+        td
+          p Form Element
+        td
+          form
+      tr
+        td
+          p Fieldset
+        td
+          form.form
+            fieldset
+              legend Fieldset 1 legend
+            fieldset
+              legend Fieldset 2 legend
+
+      tr
+        td
+          p Inputs
+        td
+          form
+            label(for="input-text")
+            input#input-text(type="text", placeholder="Text input")
+
+            label(for="input-checkbox")
+            input#input-checkbox(type="checkbox")
+
+            label(for="input-radio1")
+            input#input-radio1(type="radio")
+            input#input-radio2(type="radio")
+            input#input-radio3(type="radio")
+            input#input-radio4(type="radio")
+
+            label(for="input-select")
+            select#input-select
+              option Option 1
+              option Option 2
+              option Option 3
+
+            label(for="input-textarea")
+            textarea#input=textarea
+
+
+  table.table-pattern
+
     thead
       tr
         th
@@ -203,9 +330,13 @@ block content
       tr
         td
 
-  h2 Navigation
+  //---------------------------------------------------------------------------
+  h2#navigation Navigation
+  a(href="#navigation").fa.fa-anchor
+  //---------------------------------------------------------------------------
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -214,7 +345,8 @@ block content
       tr
         td
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -223,7 +355,8 @@ block content
       tr
         td
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
@@ -232,9 +365,13 @@ block content
       tr
         td
 
-  h2 Modals
+  //---------------------------------------------------------------------------
+  h2#modals Modals
+  a(href="#modals").fa.fa-anchor
+  //---------------------------------------------------------------------------
 
-  table
+  table.table-pattern
+
     thead
       tr
         th
