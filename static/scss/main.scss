@@ -15,18 +15,19 @@ $fa-font-path : "../../bower_components/font-awesome/fonts/"; // path to fonts
 // Vars
 // ----------------------------------------------------------------------------
 
-@import "helpers/_config";
+@import "config/_config";
+@import "config/_durations";
+@import "config/_colors";
+@import "config/_typography";
+
 @import "helpers/_mixins";
 @import "helpers/_placeholders";
-@import "helpers/_durations";
-@import "helpers/_colors";
 @import "helpers/_functions";
 
-@import "base/_typography";
-@import "base/_common";
 
 // Implementation
 // ----------------------------------------------------------------------------
+@import "base/_common";
 
 @import "layout/_breakpoints";
 @import "layout/_grid";
