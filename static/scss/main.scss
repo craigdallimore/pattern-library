@@ -12,24 +12,32 @@ $fa-font-path : "../../bower_components/font-awesome/fonts/"; // path to fonts
 @import "../bower_components/breakpoint-sass/stylesheets/_breakpoint";
 @import "../bower_components/font-awesome/scss/font-awesome";
 
-// Vars
+// Helpers
 // ----------------------------------------------------------------------------
 
-@import "helpers/_config";
 @import "helpers/_mixins";
 @import "helpers/_placeholders";
-@import "helpers/_durations";
-@import "helpers/_colors";
 @import "helpers/_functions";
 
-@import "base/_typography";
-@import "base/_common";
+// Config
+// ----------------------------------------------------------------------------
+
+@import "config/_config";
+@import "config/_grid";
+@import "config/_typography";
+@import "config/_breakpoints";
+@import "config/_colors";
+@import "config/_durations";
+
+
 
 // Implementation
 // ----------------------------------------------------------------------------
 
-@import "layout/_breakpoints";
-@import "layout/_grid";
+@import "base/_common";
+@import "components/_form";
+@import "components/_form-login";
+
 
 //@import "components/";
 @import "pages/_pattern-library";

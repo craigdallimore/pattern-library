@@ -28,6 +28,7 @@ module.exports = (grunt) ->
       dist:
         options:
           sourcemap: true
+          compass: true
         files:
           '<%= dirs.dist %>app.css': '<%= dirs.scss %>main.scss'
 
