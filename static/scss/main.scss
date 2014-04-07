@@ -29,16 +29,13 @@ $fa-font-path : "../../bower_components/font-awesome/fonts/"; // path to fonts
 @import "config/_colors";
 @import "config/_durations";
 
-
-
 // Implementation
 // ----------------------------------------------------------------------------
+
 
 @import "base/_common";
 @import "components/_form";
 @import "components/_form-login";
 
-
-//@import "components/";
 @import "pages/_pattern-library";
 //@import "theme/";
